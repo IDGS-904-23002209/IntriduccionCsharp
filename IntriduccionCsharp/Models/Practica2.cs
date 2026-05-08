@@ -14,8 +14,9 @@ namespace IntriduccionCsharp.Models
         string nombre;
         private int edad;
         protected string carrera;
-        
-        public void IngresarDatos() {
+
+        public void IngresarDatos()
+        {
             Console.WriteLine("Ingresa tu nombre: ");
             nombre = Console.ReadLine();
             Console.WriteLine("Ingresa tu edad: ");
@@ -24,4 +25,5 @@ namespace IntriduccionCsharp.Models
             carrera = Console.ReadLine();
 
         }
+    }
 }

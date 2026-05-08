@@ -1,0 +1,32 @@
+﻿@model IntriduccionCsharp.Models.Distancia
+
+@{
+    ViewBag.Title = "Distancia";
+}
+
+<h2>Distancia</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="Num1">X1: </label>
+                <input type="text" name="Numx1" value="" />
+                <br />
+                <label for="Num2">Y1: </label>
+                <input type="text" name="Numy1" value="" />
+                <br />
+                <label for="Num3">X2: </label>
+                <input type="text" name="Numx2" value="" />
+                <br />
+                <label for="Num4">Y2: </label>
+                <input type="text" name="Numy2" value="" />
+                <br />
+                <input type="submit" value="enviar" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <br />
+            <h1>La suma es: @Html.DisplayFor(model => model.Res)</h1>
+        </div>
+    </div>
+</div>
