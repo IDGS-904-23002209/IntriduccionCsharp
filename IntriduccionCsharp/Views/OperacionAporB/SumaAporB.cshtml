@@ -1,0 +1,26 @@
+﻿@model IntriduccionCsharp.Models.OperacionAporB
+
+@{
+    ViewBag.Title = "SumaAporB";
+}
+
+<h2>SumaAporB</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="Num1">Numerol: </label>
+                <input type="text" name="A" value="" />
+                <br />
+                <label for="Num2">Numero2: </label>
+                <input type="text" name="B" value="" />
+                <br />
+                <input type="submit" value="enviar" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <br />
+            <h1>La suma es: @Html.DisplayFor(model => model.RestSuma) = @Html.DisplayFor(model => model.Resp)</h1>
+        </div>
+    </div>
+</div>
